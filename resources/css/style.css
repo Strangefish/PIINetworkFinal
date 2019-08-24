@@ -314,9 +314,15 @@ ul.menu {
     height: 100%;
   }
 
+  .mobile-nav button {
+    padding: 0;
+    background-color: white;
+    border: none;
+  }
+
 
   .mobile {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     width: 100%;
@@ -328,18 +334,31 @@ ul.menu {
   }
 
   .mobile a {
-
-  text-align: left;
-  border: 0.2px solid white;
-  border-radius: 10px;
-  padding: 3px;
-  width: 100%;
-  background-color: black;
-  display: block;
-  color: rgb(255, 125, 51);
-  font-size: 0.8rem;
-
+    text-align: left;
+    border: 0.2px solid white;
+    border-radius: 10px;
+    padding: 0px 18px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    color: rgb(255, 125, 51);
+    font-size: 0.8rem;
   }
+
+  .mobile a:hover,
+  .mobile a:focus {
+    text-align: left;
+    border: 0.2px solid white;
+    border-radius: 10px;
+    padding: 0px 18px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
 
   .mobile.dropdown-content {
     display: unset;
@@ -358,11 +377,6 @@ ul.menu {
     margin: 1rem;
   }
 
-
-.site-nav--open {
-  height: auto;
-
-}
 
 }
 
@@ -413,12 +427,22 @@ br.mobile-only {
   margin-top: 3rem;
 }
 
+
 .video {
-  max-width: 400px;
-  height: 100%;
-  margin-bottom: 2rem;
+  overflow: auto;
+  padding-top: 56.25%;
+  position: relative;
+  object-fit: contain;
 }
 
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
 .box {
   margin-bottom: 2rem;
 }

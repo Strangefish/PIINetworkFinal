@@ -51,11 +51,11 @@ window.onscroll = function() {
 
 });
 
-
-/*$(document).ready(function(){
-  $(".menu-toggle").click(function) {
-
-  $("mobile-nav").toggleClass()("site-nav--open")
-  });
-
-});*/
+function myFunction() {
+  var x = document.getElementById("mobile");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+};

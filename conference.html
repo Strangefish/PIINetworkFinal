@@ -13,34 +13,55 @@
 
   <body>
 
-    <div class="site-content">
+    <div id="menu" class="site-content">
 
-    <div class="header-nav">
+      <div  id="navbar"  class=" desktop nav">
+            <ul class="menu">
+                <li> <a href="#network">About Us</a></li>
+                  <li class="dropdown"><a href="#events" class="dropbtn">Events</a>
 
-      <div  id="myNav"  class="nav">
-        <ul class="menu">
-            <li> <a href="index.html">Home</a></li>
-              <li class="dropdown"><a href="index.html#events" class="dropbtn">Events</a>
+                            <div class="dropdown-content">
+                                  <a href="#events" class="item">Lab 1</a>
+                                  <a href="#lab2" class="item">Lab2</a>
+                                  <a href="conference.html" class="item">Conference</a>
 
-                        <div class="dropdown-content">
-                              <a href="index.html#events" class="item">Lab 1</a>
-                              <a href="index.html#lab2" class="item">Lab2</a>
-                              <a href="conference.html" class="item">Conference</a>
+                            </div>
+                    </li>
 
-                        </div>
-                </li>
+                <li> <a href="#partners">Partners</a></li>
+                <li> <a href="conference.html">Conference</a></li>
+                <li> <a href="#contact">Contact</a></li>
 
-            <li> <a href="#partners">Partners</a></li>
-            <li> <a href="conference.html">Conference</a></li>
-            <li> <a href="#contact">Contact</a></li>
-
-        </ul>
+            </ul>
 
       </div>
 
 
 
-    <main>
+      <div class="mobile-nav">
+
+          <button onclick="myFunction()"><i id="burger" class="fa fa-bars menu-toggle"></i></button>
+
+            <ul id="mobile" class="mobile">
+                <li> <a href="#network">About Us</a></li>
+                  <li class="dropdown"><a href="#events" class="events-mobile">Events</a></li>
+
+                          <li class="sub"><a href="#events" class="item">Lab 1</a></li>
+                          <li class="sub"><a href="#lab2" class="item">Lab2</a></li>
+
+
+
+
+                <li> <a href="#partners">Partners</a></li>
+                <li> <a href="conference.html">Conference</a></li>
+                <li> <a href="#contact">Contact</a></li>
+
+            </ul>
+
+      </div>
+
+  <main id="main">
+
 
       <section>
 
@@ -86,7 +107,7 @@
 
             </div>
 
-                </div>
+
 
 
 
