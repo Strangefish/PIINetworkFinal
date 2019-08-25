@@ -7,9 +7,6 @@ html {
 .site-content {
   max-width: 90%;
   margin: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  /*border: 5px solid pink;*/
 }
 
 /*div {
@@ -18,15 +15,12 @@ html {
 
 @media only screen and (max-width: 470px) {
   .site-content {
-      margin-top: 18px;
       max-width: 100%;
   }
 }
 
 body {
   max-width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 h1,
@@ -58,9 +52,6 @@ li {
 
 /* Header and Jumbotron */
 
-/*.header-hero {
-  border: 5px solid green;
-}*/
 
 .header h1 {
 
@@ -77,8 +68,6 @@ font-size: 2rem;
   background-color: white;
   max-width: 100%;
   padding: 0;
-  /*border-top-left-radius: 10px;
-  border-top-right-radius: 10px;*/
   max-height: 120rem;
   margin-bottom: 2rem;
 
@@ -107,12 +96,11 @@ font-size: 2rem;
   border-radius: 10px;
   position: absolute;
   width: 90%;
-  z-index: 2;
+  z-index: 1;
   text-align: center;
   display: flex;
   justify-content: center;
   margin: auto;
-  /*border: 5px solid red;*/
 
 
 }
@@ -157,6 +145,10 @@ font-size: 2rem;
 }
 
 @media only screen and (max-width: 470px) {
+
+  #main {
+    padding-top: 54px;
+  }
 
 
   .description h1 {
@@ -289,10 +281,7 @@ ul.menu {
 
 @media only screen and (min-width: 471px) {
 
-/*.mobile-nav {
-  height: 0px;
-  overflow: hidden;
-}*/
+
 
 .mobile-nav {
   display: none;
@@ -308,72 +297,61 @@ ul.menu {
   }
 
   .mobile-nav {
-    height: 4.2rem;
     background-color: white;
-    border: 2px solid red;
+    border-top: 5px solid rgb(255, 125, 51);
+    border-bottom: 5px solid rgb(255, 125, 51);
     position: sticky;
-    z-index: 5;
+    z-index: 10;
     top: 0;
-    width: 100%;
+    display: flex;
+
 
   }
 
   button {
-    padding: 0;
-    background-color: transparent;
-    border: 2px solid black!important;
-    color: black !important;
+    padding: 0!important;
+    background-color: white!important;
+    color: rgb(255, 125, 51)!important;
+    border: none!important;
+    position: absolute!important;
+    top: 0!important;
+    z-index: 10!important;
+    width: 100%;
+    text-align: left;
   }
 
 
-  .mobile {
+  ul.mobile {
     display: none;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 9px 0 18px 0;
     width: 100%;
-    padding: 1rem;
-    margin-left: 0;
     position: sticky;
     background-color: white;
-    opacity: 0.8;
-    top: 54px;
-    border: 10px solid green;
+    top: 0;
+    z-index: 6;
+    margin: 50px auto 0 auto;
   }
 
-  /*ul.mobile {
-    display: block;
-    width: 100%;
-    position: absolute;
-    z-index: 6;
-    background: white;
-
-  }*/
 
   .mobile a {
     text-align: left;
-    border: 0.2px solid white;
     border-radius: 0px;
-    padding: 0px 18px;
-    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    width: 5rem;
     background-color: white;
     display: block;
     color: rgb(255, 125, 51);
     font-size: 0.8rem;
-  }
-
-  .mobile a:hover,
-  .mobile a:focus {
-    text-align: left;
-    border: 0.2px solid white;
-    border-radius: 0;
-    padding: 0px 18px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    color: black;
-    font-size: 0.8rem;
     font-weight: bold;
   }
+
+li.sub {
+  width: 5rem;
+}
+
 
 
   .mobile.dropdown-content {
@@ -382,15 +360,24 @@ ul.menu {
   }
 
   .sub a {
-    margin-left: 20px;
-    width: 50%;
+    margin-left: 10px;
+    width: 100%;
   }
 
+.mobile a:hover {
+  color: black;
+}
 
   .fa-bars {
-    font-size: 2rem!important;
-    margin: 1rem!important;
+    font-size: 1.5rem!important;
+    padding: 1rem 0.5rem!important;
+
   }
+
+.active a{
+  color: black!important;
+}
+
 
 }
 
@@ -595,6 +582,7 @@ img.second {
 
 @media only screen and (max-width: 470px) {
 
+
           .heading.title {
             max-width: 90%;
             margin: 1rem auto 0 auto;
@@ -655,6 +643,10 @@ img.second {
 
         h3 {
           font-size: 1rem;
+        }
+
+        div.page-image {
+          margin: 0 auto;
         }
 
     }
